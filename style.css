@@ -1,0 +1,979 @@
+body {
+  background-color: #2c2c2c; /* Light black */
+  color: #f9f9f9; /* Set text color to maintain contrast */
+  margin: 0;
+  padding: 0;insta
+  font-family: Arial, sans-serif; /* Ensure a consistent font */
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: radial-gradient(circle at top right, rgba(121, 68, 154, 0.13),       transparent),
+    radial-gradient(circle at 20% 80%, rgba(41, 196, 255, 0.13), transparent)
+}
+/* stars code will be start here */
+.night {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(45deg);
+}
+
+.shooting_star {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(-45deg, #5f91ff, rgba(0, 0, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px #699bff);
+  -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+          animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+}
+.shooting_star::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+          animation: shining 3000ms ease-in-out infinite;
+}
+.shooting_star::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5f91ff, rgba(0, 0, 255, 0));
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+          animation: shining 3000ms ease-in-out infinite;
+  transform: translateX(50%) rotateZ(-45deg);
+}
+.shooting_star:nth-child(1) {
+  top: calc(50% - 6px);
+  left: calc(50% - 208px);
+  -webkit-animation-delay: 121ms;
+          animation-delay: 121ms;
+}
+.shooting_star:nth-child(1)::before, .shooting_star:nth-child(1)::after {
+  -webkit-animation-delay: 121ms;
+          animation-delay: 121ms;
+}
+.shooting_star:nth-child(2) {
+  top: calc(50% - -148px);
+  left: calc(50% - 47px);
+  -webkit-animation-delay: 2605ms;
+          animation-delay: 2605ms;
+}
+.shooting_star:nth-child(2)::before, .shooting_star:nth-child(2)::after {
+  -webkit-animation-delay: 2605ms;
+          animation-delay: 2605ms;
+}
+.shooting_star:nth-child(3) {
+  top: calc(50% - -30px);
+  left: calc(50% - 279px);
+  -webkit-animation-delay: 521ms;
+          animation-delay: 521ms;
+}
+.shooting_star:nth-child(3)::before, .shooting_star:nth-child(3)::after {
+  -webkit-animation-delay: 521ms;
+          animation-delay: 521ms;
+}
+.shooting_star:nth-child(4) {
+  top: calc(50% - 93px);
+  left: calc(50% - 40px);
+  -webkit-animation-delay: 9080ms;
+          animation-delay: 9080ms;
+}
+.shooting_star:nth-child(4)::before, .shooting_star:nth-child(4)::after {
+  -webkit-animation-delay: 9080ms;
+          animation-delay: 9080ms;
+}
+.shooting_star:nth-child(5) {
+  top: calc(50% - -192px);
+  left: calc(50% - 107px);
+  -webkit-animation-delay: 8402ms;
+          animation-delay: 8402ms;
+}
+.shooting_star:nth-child(5)::before, .shooting_star:nth-child(5)::after {
+  -webkit-animation-delay: 8402ms;
+          animation-delay: 8402ms;
+}
+.shooting_star:nth-child(6) {
+  top: calc(50% - 60px);
+  left: calc(50% - 156px);
+  -webkit-animation-delay: 6125ms;
+          animation-delay: 6125ms;
+}
+.shooting_star:nth-child(6)::before, .shooting_star:nth-child(6)::after {
+  -webkit-animation-delay: 6125ms;
+          animation-delay: 6125ms;
+}
+.shooting_star:nth-child(7) {
+  top: calc(50% - -115px);
+  left: calc(50% - 260px);
+  -webkit-animation-delay: 2008ms;
+          animation-delay: 2008ms;
+}
+.shooting_star:nth-child(7)::before, .shooting_star:nth-child(7)::after {
+  -webkit-animation-delay: 2008ms;
+          animation-delay: 2008ms;
+}
+.shooting_star:nth-child(8) {
+  top: calc(50% - -32px);
+  left: calc(50% - 148px);
+  -webkit-animation-delay: 8507ms;
+          animation-delay: 8507ms;
+}
+.shooting_star:nth-child(8)::before, .shooting_star:nth-child(8)::after {
+  -webkit-animation-delay: 8507ms;
+          animation-delay: 8507ms;
+}
+.shooting_star:nth-child(9) {
+  top: calc(50% - -67px);
+  left: calc(50% - 29px);
+  -webkit-animation-delay: 5196ms;
+          animation-delay: 5196ms;
+}
+.shooting_star:nth-child(9)::before, .shooting_star:nth-child(9)::after {
+  -webkit-animation-delay: 5196ms;
+          animation-delay: 5196ms;
+}
+.shooting_star:nth-child(10) {
+  top: calc(50% - 14px);
+  left: calc(50% - 88px);
+  -webkit-animation-delay: 8003ms;
+          animation-delay: 8003ms;
+}
+.shooting_star:nth-child(10)::before, .shooting_star:nth-child(10)::after {
+  -webkit-animation-delay: 8003ms;
+          animation-delay: 8003ms;
+}
+.shooting_star:nth-child(11) {
+  top: calc(50% - -64px);
+  left: calc(50% - 221px);
+  -webkit-animation-delay: 6784ms;
+          animation-delay: 6784ms;
+}
+.shooting_star:nth-child(11)::before, .shooting_star:nth-child(11)::after {
+  -webkit-animation-delay: 6784ms;
+          animation-delay: 6784ms;
+}
+.shooting_star:nth-child(12) {
+  top: calc(50% - 90px);
+  left: calc(50% - 288px);
+  -webkit-animation-delay: 1766ms;
+          animation-delay: 1766ms;
+}
+.shooting_star:nth-child(12)::before, .shooting_star:nth-child(12)::after {
+  -webkit-animation-delay: 1766ms;
+          animation-delay: 1766ms;
+}
+.shooting_star:nth-child(13) {
+  top: calc(50% - -15px);
+  left: calc(50% - 42px);
+  -webkit-animation-delay: 852ms;
+          animation-delay: 852ms;
+}
+.shooting_star:nth-child(13)::before, .shooting_star:nth-child(13)::after {
+  -webkit-animation-delay: 852ms;
+          animation-delay: 852ms;
+}
+.shooting_star:nth-child(14) {
+  top: calc(50% - -122px);
+  left: calc(50% - 184px);
+  -webkit-animation-delay: 1740ms;
+          animation-delay: 1740ms;
+}
+.shooting_star:nth-child(14)::before, .shooting_star:nth-child(14)::after {
+  -webkit-animation-delay: 1740ms;
+          animation-delay: 1740ms;
+}
+.shooting_star:nth-child(15) {
+  top: calc(50% - 126px);
+  left: calc(50% - 273px);
+  -webkit-animation-delay: 6417ms;
+          animation-delay: 6417ms;
+}
+.shooting_star:nth-child(15)::before, .shooting_star:nth-child(15)::after {
+  -webkit-animation-delay: 6417ms;
+          animation-delay: 6417ms;
+}
+.shooting_star:nth-child(16) {
+  top: calc(50% - -46px);
+  left: calc(50% - 137px);
+  -webkit-animation-delay: 4192ms;
+          animation-delay: 4192ms;
+}
+.shooting_star:nth-child(16)::before, .shooting_star:nth-child(16)::after {
+  -webkit-animation-delay: 4192ms;
+          animation-delay: 4192ms;
+}
+.shooting_star:nth-child(17) {
+  top: calc(50% - 78px);
+  left: calc(50% - 184px);
+  -webkit-animation-delay: 7087ms;
+          animation-delay: 7087ms;
+}
+.shooting_star:nth-child(17)::before, .shooting_star:nth-child(17)::after {
+  -webkit-animation-delay: 7087ms;
+          animation-delay: 7087ms;
+}
+.shooting_star:nth-child(18) {
+  top: calc(50% - -6px);
+  left: calc(50% - 67px);
+  -webkit-animation-delay: 8272ms;
+          animation-delay: 8272ms;
+}
+.shooting_star:nth-child(18)::before, .shooting_star:nth-child(18)::after {
+  -webkit-animation-delay: 8272ms;
+          animation-delay: 8272ms;
+}
+.shooting_star:nth-child(19) {
+  top: calc(50% - -73px);
+  left: calc(50% - 81px);
+  -webkit-animation-delay: 2796ms;
+          animation-delay: 2796ms;
+}
+.shooting_star:nth-child(19)::before, .shooting_star:nth-child(19)::after {
+  -webkit-animation-delay: 2796ms;
+          animation-delay: 2796ms;
+}
+.shooting_star:nth-child(20) {
+  top: calc(50% - 91px);
+  left: calc(50% - 295px);
+  -webkit-animation-delay: 9874ms;
+          animation-delay: 9874ms;
+}
+.shooting_star:nth-child(20)::before, .shooting_star:nth-child(20)::after {
+  -webkit-animation-delay: 9874ms;
+          animation-delay: 9874ms;
+}
+
+@-webkit-keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-webkit-keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+@-webkit-keyframes sky {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+@keyframes sky {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+/* stars code will be ended here */
+
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  position: absolute;
+  bottom: 2vmin;
+  right: 2vmin;
+  color: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Footer Text Styles (Centered) */
+.footer-text {
+  position: fixed;
+  bottom: 70px; /* Position above the bottom bar */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Go to Top Button Styles */
+.go-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 100px; /* Position above the bottom bar */
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 2000; /* Ensure it is above other content */
+}
+
+.go-to-top svg {
+  fill: white;
+}
+
+.go-to-top:hover {
+  background-color: #005f8c;
+}
+
+.go-to-top .tooltip {
+  display: none;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if height is defined */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text within the flex container */
+  margin-top: 50px; /* Add some top margin to space it from the navbar */
+}
+/* Animation to show each letter one by one */
+@keyframes revealText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to each span inside .name and .title */
+.name span, .title span {
+  display: inline-block;
+  opacity: 0;
+  animation: revealText 0.5s forwards;
+}
+
+/* Delay the animation for each letter of Akram Shaik 10 */
+.name span:nth-child(1) { animation-delay: 0s; }
+.name span:nth-child(2) { animation-delay: 0.1s; }
+.name span:nth-child(3) { animation-delay: 0.2s; }
+.name span:nth-child(4) { animation-delay: 0.3s; }
+.name span:nth-child(5) { animation-delay: 0.4s; }
+.name span:nth-child(6) { animation-delay: 0.5s; }
+.name span:nth-child(7) { animation-delay: 0.6s; }
+.name span:nth-child(8) { animation-delay: 0.7s; }
+.name span:nth-child(9) { animation-delay: 0.8s; }
+.name span:nth-child(10) { animation-delay: 0.9s; }
+
+/* Delay the animation for each letter of Junior Software Engineer - 22 */
+.title span:nth-child(1) { animation-delay: 1s; }
+.title span:nth-child(2) { animation-delay: 1.1s; }
+.title span:nth-child(3) { animation-delay: 1.2s; }
+.title span:nth-child(4) { animation-delay: 1.3s; }
+.title span:nth-child(5) { animation-delay: 1.4s; }
+.title span:nth-child(6) { animation-delay: 1.5s; }
+.title span:nth-child(7) { animation-delay: 1.6s; }
+.title span:nth-child(8) { animation-delay: 1.7s; }
+.title span:nth-child(9) { animation-delay: 1.8s; }
+.title span:nth-child(10) { animation-delay: 1.9s; }
+.title span:nth-child(11) { animation-delay: 2s; }
+.title span:nth-child(12) { animation-delay: 2.1s; }
+.title span:nth-child(13) { animation-delay: 2.2s; }
+.title span:nth-child(14) { animation-delay: 2.3s; }
+.title span:nth-child(15) { animation-delay: 2.4s; }
+.title span:nth-child(16) { animation-delay: 2.5s; }
+.title span:nth-child(17) { animation-delay: 2.6s; }
+.title span:nth-child(18) { animation-delay: 2.7s; }
+.title span:nth-child(19) { animation-delay: 2.8s; }
+.title span:nth-child(20) { animation-delay: 2.9s; }
+.title span:nth-child(21) { animation-delay: 3s; }
+.title span:nth-child(22) { animation-delay: 3.1s; }
+
+/* Projects Section Styling */
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  gap: 20px; /* Space between project items */
+  padding: 20px; /* Padding for the container */
+  align-items: center; /* Center items for smaller screens */
+}
+
+.projects-container h2 {
+  margin: 0; /* Remove default margin to keep the title aligned */
+  padding-bottom: 10px; /* Space below the title */
+  font-size: 2rem; /* Title size */
+  text-align: center; /* Center the title text */
+}
+
+/* Project Item Styling */
+.project-item {
+  background-color: #1c1c1c; /* Background color for project items */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside each project item */
+  width: 100%; /* Full width for smaller screens */
+  max-width: 500px; /* Maximum width to maintain a consistent look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative; /* Ensure position for icons */
+  transition: transform 0.2s, background-color 0.2s, border 0.3s, box-shadow 0.3s; /* Smooth transition */
+  text-align: center; /* Center the content inside each project item */
+}
+
+/* Add this to your existing CSS */
+.project-image {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.1s ease; /* Smooth transition */
+  padding: 10px; /* Add some padding for the border to appear */
+  background-color: transparent; /* Make the background transparent */
+}
+
+
+.project-image:hover {
+  transform: scale(2.2); /* Zoom effect */
+}
+
+/* Icon Styling */
+.project-item .icon {
+  font-size: 2rem; /* Adjust size as needed */
+  color: #f9f9f9; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+/* Play Icon Styling */
+.play-icon {
+  color: #ffffff; /* Change the play button color to white */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for play icon */
+.play-icon:hover {
+  color: #ff0000; /* Change color to red on hover */
+}
+
+/* Project Title Styling */
+.project-title {
+  font-size: 1.5rem; /* Title size */
+  margin-top: 10px; /* Space for the title */
+}
+
+/* Separator for Projects */
+.project-separator {
+  width: 100%;
+  height: 2px; /* Thickness of the separator */
+  background-color: #2c2c2c; /* Color of the separator */
+  margin: 20px 0; /* Space above and below the separator */
+}
+
+/* Styling for the play icon */
+.play-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on the play icon */
+.project-item:hover .play-icon {
+  transform: scale(1.2);
+}
+
+/* Tech tags styling */
+.technologies .tech-tag {
+  display: inline-block;
+  margin-right: 8px;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .projects-container {
+    flex-direction: row; /* Change to row layout for larger screens */
+    flex-wrap: wrap; /* Allow wrapping for items */
+    justify-content: center; /* Center the items in the row */
+  }
+}
+/* Styling for the play icon */
+.play-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on the play icon */
+.project-item:hover .play-icon {
+  transform: scale(1.2);
+}
+
+/* Tech tags styling */
+.technologies .tech-tag {
+  display: inline-block;
+  margin-right: 8px;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+  .project-item {
+    width: calc(50% - 40px); /* Two items per row with gap */
+    margin: 10px; /* Space around each project item */
+  }
+
+/* Technologies */
+.technologies-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.technologies-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.tech-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Individual tech-item styling */
+.tech-item {
+  padding: 16px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-50px); /* Move up initially */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.tech-item.visible {
+  opacity: 1;
+  transform: translateY(0); /* Reset position */
+}
+
+.tech-item i {
+  font-size: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Hover effect for zooming the icon */
+.tech-item:hover .tech-icon {
+  transform: scale(1.3); /* Zoom in the icon */
+}
+
+/* Animation for floating up and down */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px); /* Move down */
+  }
+  100% {
+    transform: translateY(0); /* Move back up */
+  }
+}
+
+.tech-item.visible {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .tech-items {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .tech-item i {
+    font-size: 2.5rem;
+  }
+}
+/* technologies */
+
+/* Button Container for Centering */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  height: 100px; /* Adjust height as needed */
+}
+
+/* Button Container for Centering */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  height: 100px; /* Adjust height as needed */
+  position: relative; /* To contain the animation effect */
+}
+
+/* Animation Keyframes */
+@keyframes slide-in {
+  to {
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Move to the center */
+  }
+}
+
+/* Center alignment container */
+.center-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically align if needed */
+  flex-direction: column; /* Stack content vertically */
+  width: 100%;
+  text-align: center; /* Ensure text elements are centered */
+  padding: 20px 0;
+}
+
+/* scroll up code */
+.go-to-top {
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.go-to-top:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.go-to-top:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.go-to-top svg {
+  fill: currentColor;
+  color: #0073e6;
+  transition: color 0.3s;
+}
+
+.go-to-top:hover svg {
+  color: #005bb5;
+}
+/* scroll up code BELOW 2 CODES ARE FRO hearder */
+header {
+  position: relative; /* Keeps it fixed at the top-left */
+  top: 20px; /* Adjusted distance from the top */
+  left: 20px; /* Adjusted distance from the left */
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+header svg {
+  width: 80px; /* Increased size for better visibility */
+  height: 100px;
+}
+
+.background-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Occupies half the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-svg svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .background-svg {
+    height: 100vh; /* Slightly larger for larger screens */
+  }
+}
+
+/* Footer Text Styles */
+.footer-text {
+  position: relative; /* Keeps it at the bottom */
+  bottom: 10px; /* Adjust the distance from the bottom */
+  left: 50%; /* Moves it to the center horizontally */
+  transform: translateX(-50%); /* Offsets the element by 50% of its width to truly center it */
+  text-align: center; /* Ensures the text inside is centered */
+  color: #fff; /* Text color */
+  font-size: 1rem; /* Font size */
+  padding: 10px; /* Adds padding around the text */
+  width: auto; /* Ensures it takes only as much width as it needs */
+}
+
+/* Icon Container (Navbar at Top Right Corner) */
+.icon-container {
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  justify-content: flex-start; /* Aligns icons to the top of the container */
+  align-items: flex-end;       /* Aligns icons to the right within the container */
+  position: fixed;             /* Ensures icons remain at the top-right corner on scroll */
+  top: 50px;                  /* Adjusts the distance from the top (moved further down) */
+  right: 0px;                  /* Adjusts the distance from the right */
+  gap: 20px;                   /* Ensures proper spacing between icons */
+  padding: 10px;               /* Optional padding inside the container */
+  z-index: 1000;               /* Ensures container stays above other content */
+}
+
+/* Icon Styling */
+.icon-container a {
+  font-size: 2rem;             /* Sets the size of the icons */
+  color: #fff;                 /* Default color for icons (white) */
+  text-decoration: none;       /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
+}
+
+/* Hover Effect for Icons */
+.icon-container a:hover {
+  color: #0073b1;              /* Changes color on hover */
+}
+
+/* LinkedIn Icon Container (Navbar at Top Right Corner) */
+.linkedin-container {
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  justify-content: flex-start; /* Aligns icons to the top of the container */
+  align-items: flex-end;       /* Aligns icons to the right within the container */
+  position: fixed;             /* Ensures the container remains at the top-right corner on scroll */
+  top: 100px;                  /* Adjusts the distance from the top */
+  right: 0px;                  /* Adjusts the distance from the right */
+  gap: 20px;                   /* Ensures proper spacing between icons */
+  padding: 10px;               /* Optional padding inside the container */
+  z-index: 1000;               /* Ensures container stays above other content */
+}
+
+/* Icon Styling */
+.linkedin-container a {
+  font-size: 2rem;             /* Sets the size of the icon */
+  color: #fff;                 /* Default color for icons (white) */
+  text-decoration: none;       /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
+}
+
+/* Hover Effect for LinkedIn Icon */
+.linkedin-container a:hover {
+  color: #0073b1;              /* Changes color to LinkedIn's brand color on hover */
+}
+
+/* Email Icon Container (Navbar at Top Right Corner) */
+.email-container {
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  justify-content: flex-start; /* Aligns icons to the top of the container */
+  align-items: flex-end;       /* Aligns icons to the right within the container */
+  position: fixed;             /* Ensures the container remains at the top-right corner on scroll */
+  top: 180px;                  /* Adjusts the distance from the top */
+  right: 0px;                  /* Adjusts the distance from the right */
+  gap: 20px;                   /* Ensures proper spacing between icons */
+  padding: 10px;               /* Optional padding inside the container */
+  z-index: 1000;               /* Ensures container stays above other content */
+}
+
+/* Icon Styling */
+.email-container a {
+  font-size: 2rem;             /* Sets the size of the icon */
+  color: #fff;                 /* Default color for icons (white) */
+  text-decoration: none;       /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
+}
+
+/* Hover Effect for Email Icon */
+.email-container a:hover {
+  color: #007bff;              /* Changes color to blue on hover (Bootstrap blue) */
+}
+
+/* Instagram Icon Container (Fixed at Top Right Corner) */
+.instagram-container {
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  justify-content: flex-start; /* Aligns icons to the top of the container */
+  align-items: flex-end;       /* Aligns icons to the right within the container */
+  position: fixed;             /* Keeps container fixed while scrolling */
+  top: 140px;                  /* Adjusts distance from the top */
+  right: 0px;                 /* Adjusts distance from the right */
+  gap: 20px;                   /* Adds space between each icon */
+  padding: 10px;               /* Adds padding around the container */
+  z-index: 1000;               /* Ensures container stays above other content */
+}
+
+/* Icon Styling */
+.instagram-container a {
+  font-size: 2rem;             /* Sets the size of the icon */
+  color: #fff;                 /* Default color for icons (white) */
+  text-decoration: none;       /* Removes underline from links */
+  transition: color 0.3s ease; /* Smooth color transition effect */
+  display: block;              /* Ensures each icon occupies its own line */
+}
+
+/* Hover Effect for Instagram Icon */
+.instagram-container a:hover {
+  color: #FD1D1D;              /* Changes color on hover (Instagram gradient effect start) */
+}
+
+
+.contact-wrapper {
+  display: flex;
+  align-items: center; /* Align items vertically center */
+  justify-content: space-between; /* Add spacing between the form and the SVG */
+  padding: 20px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px; /* Adjust space between the contact form and the SVG */
+}
+
+.svg-container svg {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px;
+}
+
+/* Centering styles */
+.resume-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if height is defined */
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text within the flex container */
+  margin-top: 50px; /* Add some top margin to space it from the navbar */
+
+}
+
+/* Button Container for Centering */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  height: 70px; /* Adjust height as needed */
+}
+
+/* Slide-in Animation for button visibility */
+.download-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #f9f9f9; /* Light text color for contrast */
+  border-radius: 30px;
+  background-color: white; /* Set background color to white */
+  color: #333; /* Dark text color for contrast */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateX(-200%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.download-resume.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hover effect */
+.download-resume:hover {
+  background-color: #f1f1f1; /* Light hover background */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
